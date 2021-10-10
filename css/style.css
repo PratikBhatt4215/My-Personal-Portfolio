@@ -584,7 +584,7 @@ section{
         margin: 0px -52px;
     }
     .btn{
-        margin-left: 6rem;
+        margin-left: 0rem;
     }
     .about .row .content .info{
         color: white;
@@ -597,5 +597,8 @@ section{
     }
     .show-scroll {
         width: 1.7rem;
+    }
+    .middle{
+        margin-left:12rem;
     }
 }
