@@ -35,9 +35,7 @@ html::-webkit-scrollbar-thumb{
     background:var(--gradient);
 }
 
-.margin{
-    margin-left: 3rem;
-}
+
 
 section{
     padding:8rem 9%;
@@ -560,7 +558,7 @@ section{
 
 }
 
-@media (max-width:450px){
+@media (max-width:100px){
 
     html{
         font-size: 10%;
@@ -569,10 +567,35 @@ section{
     .heading{
         font-size: 4rem;
     }
+    .about .row .image img {
+        margin: 0px -100px;
+        
+    }
     
 
     .contact .row form .inputBox input{
         width:100%;
     }
 
+}
+
+@media (max-width:550px){
+    .about .row .image img{
+        margin: 0px -52px;
+    }
+    .btn{
+        margin-left: 6rem;
+    }
+    .about .row .content .info{
+        color: white;
+    }
+    .about .row .content .box-container .box p{
+        color: white;
+    }
+    section {
+        padding: 3.6rem;
+    }
+    .show-scroll {
+        width: 1.7rem;
+    }
 }
