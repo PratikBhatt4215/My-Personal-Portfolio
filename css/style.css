@@ -596,5 +596,8 @@ section{
     .show-scroll {
         width: 1.7rem;
     }
+    .content .btn{
+        margin-left: -9rem;
+    }
 
 }
