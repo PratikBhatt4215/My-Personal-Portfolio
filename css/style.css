@@ -79,6 +79,21 @@ section{
     background:var(--blue);
     letter-spacing: .2rem;
 }
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--gradient);
+    color:#fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+    margin-left: 2rem;
+}
+.button:hover{
+    background:var(--blue);
+    letter-spacing: .2rem;
+}
 
 
 .header{
@@ -596,8 +611,9 @@ section{
     .show-scroll {
         width: 1.7rem;
     }
-    .content .btn{
-        margin-left: -9rem;
+    .content .button{
+        margin-left: 1rem;
     }
+
 
 }
