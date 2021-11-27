@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
+
+
+
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
         <i class="fas fa-chevron-up scrolltop__icon"></i>
@@ -30,8 +34,8 @@
 
         <nav class=" navbar">
             <a href="#home">home</a>
-            <a href="#services">services</a>
             <a href="#about">about</a>
+            <a href="#services">services</a>
             <a href="#skills">skills</a>
             <a href="#project">project</a>
             <a href="#contact">contact</a>
@@ -322,6 +326,12 @@
             loop: true,
             typeSpeed: 150
         });
+
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
     </script>
     <script src="./main.js"></script>
 
