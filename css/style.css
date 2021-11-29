@@ -619,10 +619,10 @@ section {
         margin: 0px -52px;
     }
     .about .row .content .info {
-        color: white;
+        color: rgb(7, 0, 0);
     }
     .about .row .content .box-container .box p {
-        color: white;
+        color: rgb(12, 0, 0);
     }
     section {
         padding: 6.2rem;
