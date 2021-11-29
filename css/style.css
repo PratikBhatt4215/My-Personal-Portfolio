@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
     --blue: #0abde3;
-    --gradient: linear-gradient(darkviolet, deeppink);
-    --gradient2: linear-gradient(deeppink, darkviolet);
 }
 
 * {
@@ -18,13 +16,13 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 75%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
-    width: .7rem;
+    width: .9rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -32,23 +30,12 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--gradient);
+    background: rgb(97, 61, 61);
 }
 
 section {
     padding: 8rem 9%;
     min-height: 100vh;
-}
-
-.gradient-background {
-    height: 100%;
-    width: 100%;
-    background: var(--gradient);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
 }
 
 .heading {
@@ -68,15 +55,18 @@ section {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: var(--gradient);
+    background: var(--blue);
     color: #fff;
     font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 800;
     cursor: pointer;
     border: 1px solid var(--blue);
 }
 
 .btn:hover {
-    background: var(--blue);
+    background: #fff;
+    color: black;
     letter-spacing: .2rem;
 }
 
@@ -84,8 +74,10 @@ section {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: var(--gradient);
+    background: var(--blue);
+    border-radius: .5rem;
     color: #fff;
+    font-weight: 800;
     font-size: 1.7rem;
     cursor: pointer;
     border: 1px solid var(--blue);
@@ -93,7 +85,8 @@ section {
 }
 
 .button:hover {
-    background: var(--blue);
+    background: #fff;
+    color: black;
     letter-spacing: .2rem;
 }
 
@@ -101,8 +94,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
-    background: var(--gradient2);
+    padding: 1rem 15%;
+    background: var(--blue);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -124,7 +118,7 @@ section {
 }
 
 .header .navbar a:hover {
-    color: var(--blue);
+    letter-spacing: .3rem;
 }
 
 
@@ -137,14 +131,10 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.3rem;
-    background: var(--gradient);
+    background: rgb(97, 61, 61);
     border-radius: .4rem;
     z-index: 10;
     transition: .4s;
-}
-
-.scrolltop:hover {
-    background-color: #048654;
 }
 
 .scrolltop__icon {
@@ -204,23 +194,6 @@ section {
     position: relative;
 }
 
-.home #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
 .home .content {
     text-align: center;
     position: relative;
@@ -232,7 +205,11 @@ section {
     width: 25rem;
     border-radius: 50%;
     object-fit: cover;
-    border: 1rem solid var(--blue);
+    border: 5px solid var(--blue);
+}
+
+.home .content img:hover {
+    transform: scale(1.05);
 }
 
 .home .content h3 {
@@ -285,7 +262,7 @@ section {
 }
 
 .about .row .content .info {
-    color: rgb(253, 253, 253);
+    color: rgb(15, 1, 1);
     font-size: 1.7rem;
     padding: 1rem 0;
     line-height: 2;
@@ -304,7 +281,7 @@ section {
 
 .about .row .content .box-container .box p {
     font-size: 1.7rem;
-    color: rgb(255, 255, 255);
+    color: rgb(17, 1, 1);
     padding: .5rem 0;
     line-height: 2;
 }
@@ -322,7 +299,7 @@ section {
     color: #111;
     background: #fff;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 100;
+    font-weight: 800;
 }
 
 .education .max-width .titleedu {
@@ -331,7 +308,6 @@ section {
 
 .education .max-width .titleedu span {
     color: var(--blue);
-    ;
 }
 
 .education .serv-content .card {
@@ -347,15 +323,15 @@ section {
 }
 
 .education .serv-content .card:hover {
-    background: var(--gradient);
+    background: var(--blue);
 }
 
 .education .serv-content .card .box {
-    transition: all 0.3s ease;
+    transition: all 2s ease;
 }
 
 .education .serv-content .card i {
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(20, 163, 220);
     transition: color 0.3s ease;
 }
@@ -364,10 +340,18 @@ section {
     color: #fff;
 }
 
+.education .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
 .education .serv-content .card .college {
     font-size: 35px;
-    font-weight: 500;
+    color: black;
     margin: 10px 0 7px 0;
+}
+
+.education .serv-content .card p {
+    color: black;
 }
 
 .services .box-container {
@@ -378,11 +362,16 @@ section {
 
 .services .box-container .box {
     flex: 1 1 30rem;
+    cursor: pointer;
     border-radius: .5rem;
     background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, .1);
     padding: 4rem;
     text-align: center;
+}
+
+.services .box-container .box:hover {
+    transform: scale(1.05);
 }
 
 .services .box-container .box i {
@@ -395,6 +384,7 @@ section {
     color: #222;
     font-size: 2.5rem;
     padding-top: 1rem;
+    font-weight: 900;
 }
 
 .services .box-container .box p {
@@ -402,26 +392,32 @@ section {
     font-size: 1.7rem;
     padding: 1rem 0;
     line-height: 2;
+    font-weight: 600;
 }
 
 .skills__data {
     display: flex;
+    cursor: pointer;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    font-weight: 600;
+    font-weight: 800;
     padding: 2.5rem 1rem;
     font-size: 2rem;
-    color: white;
+    color: rgb(8, 0, 0);
     margin-bottom: 3rem;
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }
 
+.skills__data:hover {
+    transform: scale(1.02);
+}
+
 .skills__icon {
     font-size: 3rem;
     margin-right: 2rem;
-    color: #40dff4;
+    color: #00aec5;
 }
 
 .skills__names {
@@ -460,25 +456,31 @@ section {
     border-radius: .5rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .Project .box-container .box img {
     height: 20rem;
     width: 100%;
-    border-radius: .5rem;
+    border-radius: .3rem;
     object-fit: cover;
 }
 
+.Project .box-container .box:hover {
+    transform: scale(1.05);
+}
+
 .Project .box-container .box h3 {
-    color: var(--blue);
+    color: black;
     font-size: 2.5rem;
+    font-weight: 900;
     padding: .5rem 0;
 }
 
 .Project .box-container .box p {
-    color: #666;
+    color: rgb(17, 1, 1);
     font-size: 1.5rem;
+    font-weight: 600;
     padding: .5rem 0;
 }
 
@@ -500,8 +502,7 @@ section {
 .contact .row form {
     flex: 1 1 42rem;
     border-radius: .5rem;
-    border: var(--border);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     padding: 2rem;
     text-align: center;
 }
@@ -516,14 +517,9 @@ section {
     margin: .8rem 0;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
-    border: var(--border);
+    border: 1px solid var(--blue);
     text-transform: none;
     font-size: 1.4rem;
-}
-
-.contact .row form .box:focus,
-.contact .row form .box:hover {
-    border-color: var(--blue);
 }
 
 .contact .row form textarea {
@@ -533,7 +529,8 @@ section {
 
 .footer {
     text-align: center;
-    height: 34px;
+    height: 100%;
+    background-color: var(--blue);
     /* padding-bottom: 8rem; */
 }
 
@@ -548,7 +545,7 @@ section {
 }
 
 .footer .share a:hover {
-    color: var(--blue);
+    color: white;
 }
 
 .footer .credit {
@@ -559,7 +556,7 @@ section {
 }
 
 .footer .credit span {
-    color: var(--blue);
+    color: white;
 }
 
 @media (max-width:991px) {
@@ -589,7 +586,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background: var(--gradient);
+        background: var(--blue);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .header .navbar.active {
