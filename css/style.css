@@ -206,6 +206,7 @@ section {
     width: 25rem;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
     border: 5px solid var(--blue);
 }
 
