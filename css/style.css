@@ -30,7 +30,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: rgb(97, 61, 61);
+    background: #0abde3;
 }
 
 section {
@@ -131,7 +131,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.3rem;
-    background: rgb(97, 61, 61);
+    background: #000405;
     border-radius: .4rem;
     z-index: 10;
     transition: .4s;
@@ -139,8 +139,9 @@ section {
 
 .scrolltop__icon {
     font-size: 1.7rem;
-    color: #FBFEFD;
+    color: #0abde3;
 }
+
 
 .typing-text {
     color: var(--blue);
@@ -225,8 +226,9 @@ section {
 
 .home .content p {
     color: #222;
+    font-weight: 700;
     font-size: 2.5rem;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .about .row {
@@ -441,9 +443,16 @@ section {
     width: 85%;
 }
 
+.skills__python {
+    width: 85%;
+}
 .skills__java {
     width: 85%;
 }
+.skills__bootstrap {
+    width: 85%;
+}
+
 
 .Project .box-container {
     display: flex;
@@ -633,4 +642,5 @@ section {
     .content .button {
         margin-left: 1rem;
     }
+
 }
