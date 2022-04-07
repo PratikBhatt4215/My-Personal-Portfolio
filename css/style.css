@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
     --blue: #0abde3;
+    --bluemix: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --helper: #8490ff;
+    --bg: rgb(249 249 255);
 }
+      
+.grid {
+    display: grid;
+    gap: 9rem;
+  }
+  
+  .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+  }
 
 * {
     font-family: 'Nunito', sans-serif;
@@ -14,6 +27,8 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
+
+
 
 html {
     font-size: 75%;
@@ -30,13 +45,16 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #0abde3;
+    background: var(--bluemix);
 }
 
 section {
     padding: 8rem 9%;
     min-height: 100vh;
 }
+
+
+  
 
 .heading {
     text-align: center;
@@ -55,34 +73,23 @@ section {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: var(--blue);
+    background: var(--bluemix);
     color: #fff;
     font-size: 1.7rem;
     border-radius: .5rem;
     font-weight: 800;
     cursor: pointer;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--bluemix);
 }
 
 .btn:hover {
     background: #fff;
+    border: 1px solid var(--blue);
     color: black;
     letter-spacing: .2rem;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: .8rem 3rem;
-    background: var(--blue);
-    border-radius: .5rem;
-    color: #fff;
-    font-weight: 800;
-    font-size: 1.7rem;
-    cursor: pointer;
-    border: 1px solid var(--blue);
-    margin-left: 2rem;
-}
+
 
 .button:hover {
     background: #fff;
@@ -95,7 +102,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 15%;
-    background: var(--blue);
+    background: var(--bluemix);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -143,9 +150,7 @@ section {
 }
 
 
-.typing-text {
-    color: var(--blue);
-}
+
 
 .logo span:hover {
     color: #fff;
@@ -187,50 +192,54 @@ section {
     font-size: 3rem;
     display: none;
 }
-
-.home {
+body {
+    background-color: var(--bg);
+  }
+  
+  .section-hero-data {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
-}
-
-.home .content {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.home .content img {
-    height: 28rem;
-    width: 25rem;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    border: 5px solid var(--blue);
-}
-
-.home .content img:hover {
-    transform: scale(1.05);
-}
-
-.home .content h3 {
-    font-size: 4rem;
-    color: #222;
+    /* align-items: flex-start; */
+  }
+  
+  .hero-top-data {
     text-transform: uppercase;
-}
-
-.home .content h3 span {
-    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+  }
+  
+  .hero-heading {
     text-transform: uppercase;
-}
-
-.home .content p {
-    color: #222;
     font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 2.5;
-}
+    font-size: 6.4rem;
+  }
+  
+  .hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+    font-size: 1.4rem;
+  }
+  
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  picture {
+    text-align: center;
+  }
+  
+  .hero-img {
+      margin-top: 5rem;
+    max-width: 60%;
+    border: 1rem solid #fff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+  }
+
 
 .about .row {
     display: flex;
@@ -257,7 +266,7 @@ section {
 
 .about .row .content h3 {
     color: #222;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .about .row .content h3 span {
@@ -326,7 +335,7 @@ section {
 }
 
 .education .serv-content .card:hover {
-    background: var(--blue);
+    background: var(--bluemix);
 }
 
 .education .serv-content .card .box {
