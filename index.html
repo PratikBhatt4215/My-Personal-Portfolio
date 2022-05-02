@@ -300,14 +300,14 @@
             <div class="image">
                 <img src="images/contact-img.svg" alt="">
             </div>
-            <form action="">
+            <form action="https://formspree.io/f/mjvlpjyy" method="post" name="contact-form">
                 <h3>get in touch</h3>
-                <input type="text" placeholder="full name" name="name" class="box">
-                <input type="email" placeholder="your email" name="email" class="box">
-                <input type="number" placeholder="your number" name="number" class="box">
-                <textarea name="" placeholder="your message" name="text" class="box" id="" cols="30"
+                <input type="text" autocomplete="off" required placeholder="full name" name="username" class="box">
+                <input type="email" autocomplete="off" required placeholder="your email" name="email" class="box">
+                <input type="telephone" autocomplete="off" required placeholder="your number"  name="telephone" class="box">
+                <textarea name="textarea" autocomplete="off" required placeholder="your message" name="textarea" class="box" id="" cols="30"
                     rows="10"></textarea>
-                <input type="submit" value="send message" class="btn">
+                <input type="submit" value="send message" class="btn" onclick="submitForm()">
             </form>
         </div>
 
@@ -345,7 +345,12 @@
 
     <!-- javascript part  -->
 
-
+<script>
+    function submitForm() {
+    document.contact-form.submit();
+    document.contact-form.reset();
+}
+</script>
 
 
     <script>
