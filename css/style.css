@@ -658,6 +658,10 @@ body {
     .content .button {
         margin-left: 1rem;
     }
+    .hero-img{
+        display: none;
+    }
+
 
 }
 
