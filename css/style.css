@@ -242,6 +242,11 @@ body {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
   }
 
+  #social-icons{
+      font-size: 3rem;
+
+
+  }
 
 .about .row {
     display: flex;
@@ -658,6 +663,13 @@ body {
     .content .button {
         margin-left: 1rem;
     }
+    .hero-img{
+        display: none;
+    }
+    .header .logo span{
+        margin: -19px 0px 2px -57px;
+    }
+
 
 }
 
