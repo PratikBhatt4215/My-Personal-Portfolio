@@ -30,10 +30,10 @@ function fadeOut() {
 
 
 
-var message = "You Cannot see my codes";
+// var message = "You Cannot see my codes";
         
-function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+// function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
 
-if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+// if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
 
-document.onmousedown = rtclickcheck;
+// document.onmousedown = rtclickcheck;
