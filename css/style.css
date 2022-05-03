@@ -147,7 +147,7 @@ section {
 
 .scrolltop__icon {
     font-size: 1.7rem;
-    color: #0abde3;
+    color: #ffffff;
 }
 
 
@@ -556,7 +556,7 @@ body {
 .footer {
     text-align: center;
     height: 100%;
-    background-color: var(--blue);
+    background-color: rgb(153 163 255);
     /* padding-bottom: 8rem; */
 }
 
@@ -658,7 +658,9 @@ body {
         padding: 1.5rem;
     }
     .show-scroll {
-        width: 1.7rem;
+        width: 3.7rem;
+        background-color: var(--helper);
+        border: 1px solid black;
     }
     .content .button {
         margin-left: 1rem;
@@ -667,7 +669,7 @@ body {
         display: none;
     }
     .header .logo span{
-        margin: -19px 0px 2px -57px;
+        margin: -23px 0px 2px -39px;
     }
 
 
@@ -703,6 +705,7 @@ body {
     }
     .section-hero-data{
         align-items: center;
+        margin-top: 8rem;
     }
     .hero-para{
         text-align: center;
