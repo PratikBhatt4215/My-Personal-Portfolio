@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
     --blue: #0abde3;
-    --bluemix: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-    --bluemix2: linear-gradient(0deg, rgb(98 189 252) 0%, rgb(132 144 255) 100%);
-    --helper: #8490ff;
-    --bg: rgb(249 249 255);
 }
-      
-.grid {
-    display: grid;
-    gap: 9rem;
-  }
-  
-  .grid-two-column {
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 1fr 1fr; */
-  }
 
 * {
     font-family: 'Nunito', sans-serif;
@@ -28,8 +14,6 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
-
-
 
 html {
     font-size: 75%;
@@ -46,16 +30,13 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--bluemix);
+    background: #0abde3;
 }
 
 section {
     padding: 8rem 9%;
     min-height: 100vh;
 }
-
-
-  
 
 .heading {
     text-align: center;
@@ -74,23 +55,34 @@ section {
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: var(--bluemix);
+    background: var(--blue);
     color: #fff;
     font-size: 1.7rem;
     border-radius: .5rem;
     font-weight: 800;
     cursor: pointer;
-    border: 1px solid var(--bluemix);
+    border: 1px solid var(--blue);
 }
 
 .btn:hover {
     background: #fff;
-    border: 1px solid var(--blue);
     color: black;
     letter-spacing: .2rem;
 }
 
-
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--blue);
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+    margin-left: 2rem;
+}
 
 .button:hover {
     background: #fff;
@@ -103,7 +95,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 15%;
-    background: var(--bluemix);
+    background: var(--blue);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -147,11 +139,13 @@ section {
 
 .scrolltop__icon {
     font-size: 1.7rem;
-    color: #ffffff;
+    color: #0abde3;
 }
 
 
-
+.typing-text {
+    color: var(--blue);
+}
 
 .logo span:hover {
     color: #fff;
@@ -193,60 +187,50 @@ section {
     font-size: 3rem;
     display: none;
 }
-body {
-    background-color: var(--bg);
-  }
-  
-  .section-hero-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: flex-start; */
-  }
 
-  
-  .hero-top-data {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--helper);
-  }
-  
-  .hero-heading {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 6rem;
-  }
-  
-  .hero-para {
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
-    max-width: 60rem;
-    font-size: 1.4rem;
-  }
-  
-  .section-hero-image {
+.home {
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  
-  picture {
+    justify-content: center;
+    position: relative;
+}
+
+.home .content {
     text-align: center;
-  }
-  
-  .hero-img {
-      margin-top: 5rem;
-    max-width: 60%;
-    border: 1rem solid #fff;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
-  }
+    position: relative;
+    z-index: 1;
+}
 
-  #social-icons{
-      font-size: 3rem;
+.home .content img {
+    height: 31rem;
+    width: 28rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid var(--blue);
+}
 
+.home .content img:hover {
+    transform: scale(1.05);
+}
 
-  }
+.home .content h3 {
+    font-size: 4rem;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.home .content p {
+    color: #222;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5;
+}
 
 .about .row {
     display: flex;
@@ -273,7 +257,7 @@ body {
 
 .about .row .content h3 {
     color: #222;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .about .row .content h3 span {
@@ -342,7 +326,7 @@ body {
 }
 
 .education .serv-content .card:hover {
-    background: var(--bluemix);
+    background: var(--blue);
 }
 
 .education .serv-content .card .box {
@@ -556,7 +540,7 @@ body {
 .footer {
     text-align: center;
     height: 100%;
-    background-color: rgb(153 163 255);
+    background-color: var(--blue);
     /* padding-bottom: 8rem; */
 }
 
@@ -587,17 +571,13 @@ body {
 
 @media (max-width:991px) {
     html {
-        font-size: 58%;
+        font-size: 55%;
     }
-    .responsive{
-        margin-top: 8rem;
+    .header {
+        padding: 1rem;
     }
-
     section {
         padding: 9.6rem;
-    }
-    .container{
-        margin-top: 10rem;
     }
 }
 
@@ -616,7 +596,7 @@ body {
         top: 99%;
         left: 0;
         right: 0;
-        background: var(--bluemix2);
+        background: var(--blue);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .header .navbar.active {
@@ -646,8 +626,7 @@ body {
 
 @media (max-width:550px) {
     .about .row .image img {
-        /* margin: 0px -52px; */
-        display: none;
+        margin: 0px -52px;
     }
     .about .row .content .info {
         color: rgb(7, 0, 0);
@@ -659,66 +638,10 @@ body {
         padding: 1.5rem;
     }
     .show-scroll {
-        width: 3.7rem;
-        background-color: var(--helper);
-        border: 1px solid black;
+        width: 1.7rem;
     }
     .content .button {
         margin-left: 1rem;
     }
-    .hero-img{
-        /* display: none; */
-    }
-
-
-    .header .logo span{
-        margin: -23px 0px 2px -39px;
-    }
-
 
 }
-
-@media(max-width:1194px){
-    .responsive{
-        margin-top: 10rem;
-    }
-    .grid{
-        gap: 3.5rem;
-    }
-    html{
-        font-size: 0.5rem;
-    }
-
-}
-
-@media(max-width:1455px){
-    .hero-heading {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 4rem;
-    }
-    .responsive{
-        margin-top: 2rem;
-    }
-}
-
-@media(max-width:49em){
-    .section-hero .grid-two-column{
-        grid-template-columns: 1fr;
-    }
-    .section-hero-data{
-        align-items: center;
-        margin-top: 8rem;
-    }
-    .hero-para{
-        text-align: center;
-        margin-top: 1.5rem;
-
-    }
-    .hero-img{
-        margin-top: 0px;
-    }
-
-    
-}
-

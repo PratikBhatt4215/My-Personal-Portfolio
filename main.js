@@ -23,12 +23,8 @@ function loader() {
 }
 
 function fadeOut() {
-    setTimeout(loader, 5000);
+    setTimeout(loader, 4000);
 }
-
-
-
-
 
 // var message = "You Cannot see my codes";
         
