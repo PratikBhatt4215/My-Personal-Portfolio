@@ -438,16 +438,10 @@ section {
     width: 65%;
 }
 
-.skills__c {
-    width: 85%;
-}
-
-.skills__python {
-    width: 85%;
-}
 .skills__java {
     width: 85%;
 }
+
 .skills__bootstrap {
     width: 85%;
 }
@@ -539,7 +533,6 @@ section {
     text-align: center;
     height: 100%;
     background-color: var(--blue);
-    /* padding-bottom: 8rem; */
 }
 
 .footer .share {
