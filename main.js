@@ -22,6 +22,11 @@ function loader() {
 
 function fadeOut() {
     setTimeout(loader, 5000);
-}
+};
 
-
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2500,
+    reset: true
+})
+sr.reveal('.info',{delay:200, origin:'top'})
