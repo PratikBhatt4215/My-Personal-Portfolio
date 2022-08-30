@@ -131,7 +131,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1.3rem;
-    background: #000405;
+    background: #0abde3;
     border-radius: .4rem;
     z-index: 10;
     transition: .4s;
@@ -139,7 +139,7 @@ section {
 
 .scrolltop__icon {
     font-size: 1.7rem;
-    color: #0abde3;
+    color: white;
 }
 
 
@@ -565,7 +565,7 @@ section {
         font-size: 55%;
     }
     .header {
-        padding: 1rem;
+        padding: 2rem;
     }
     section {
         padding: 9.6rem;
